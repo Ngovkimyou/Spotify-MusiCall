@@ -19,8 +19,8 @@ class SpotifyClient:
         self.token = None
         self.token_info = None
         self.sp_oauth = SpotifyOAuth(
-            client_id="f9a585407c8c460fbbc4e0068cb5b3c5",  # Replace with your Spotify client ID
-            client_secret="fac43f882c064e918d2852f782c8049d",  # Replace with your Spotify client secret
+            client_id="",  # Replace with your Spotify client ID
+            client_secret="",  # Replace with your Spotify client secret
             redirect_uri="http://127.0.0.1:5000/callback",  # Redirect URI
             scope="user-library-read user-read-playback-state user-read-currently-playing user-read-recently-played user-modify-playback-state",  # Added play permissions
         )
@@ -168,3 +168,4 @@ def play(uri):
 
 if __name__ == "__main__":
     app.run(debug=True)
+
